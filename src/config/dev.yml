@@ -1,0 +1,21 @@
+# 开发环境配置
+app:
+  prefix: '/api'
+  port: 3033
+
+# 数据库配置
+db:
+  mysql:
+    type: 'mysql'
+    username: 'root'
+    # 推荐使用环境变量注入
+    # host: '10.221.50.193'
+    # password: '123456mysql'
+    # database: 'cdn_local'
+    port: 3306
+    charset: 'utf8mb4'
+    multipleStatements: true
+    dropSchema: false
+    synchronize: true
+    supportBigNumbers: true
+    bigNumberStrings: true

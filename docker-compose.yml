@@ -1,0 +1,16 @@
+services:
+  nest-app:
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    depends_on:
+      - mysql-container
+    ports:
+      - '3000:3000'
+  mysql-container:
+    image: mysql
+    ports:
+      - '3306:3306'
+    volumes:
+      # 前面宿主机的目录需要改为自己的
+      - /Users/zzc/study/sql-data/mysql:/var/lib/mysql

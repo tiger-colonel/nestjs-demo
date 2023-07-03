@@ -1,0 +1,28 @@
+# 开发环境配置
+app:
+  prefix: '/api'
+  port: 3033
+
+# 数据库配置
+db:
+  mysql:
+    type: 'mysql'
+    host: '127.0.0.1'
+    username: 'root'
+    password: '123456mysql'
+    database: 'fed_tools'
+    port: 3306
+    charset: 'utf8mb4'
+    logging: true
+    multipleStatements: true
+    dropSchema: false
+    synchronize: false
+    supportBigNumbers: true
+    bigNumberStrings: true
+
+# redis 配置
+redis:
+  host: 'localhost'
+  port: 6379
+  db: 0
+  keyPrefix: 'nest:'
