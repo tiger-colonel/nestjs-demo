@@ -27,13 +27,6 @@ import { ProjectModule } from './project/project.module';
             'dist/**/*.entity{.ts,.js}',
             'dist/**/**/*.entity{.ts,.js}',
           ],
-          retryAttempts: 3,
-          autoLoadEntities: true,
-          keepConnectionAlive: true,
-          // 推荐使用环境变量注入敏感信息
-          host: process.env.MYSQL_HOST,
-          password: process.env.MYSQL_PASSWORD,
-          database: process.env.MYSQL_DATABASE,
           ...config.get('db.mysql'),
         } as TypeOrmModuleOptions),
     }),

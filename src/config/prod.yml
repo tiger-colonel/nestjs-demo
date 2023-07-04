@@ -8,13 +8,10 @@ db:
   mysql:
     type: 'mysql'
     username: 'root'
-    host: '10.221.50.193'
-    password: '123456mysql'
-    database: 'cdn_local'
     port: 3306
     charset: 'utf8mb4'
     multipleStatements: true
     dropSchema: false
-    synchronize: true
+    synchronize: false
     supportBigNumbers: true
     bigNumberStrings: true
