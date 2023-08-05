@@ -27,7 +27,7 @@ import { ProjectModule } from './project/project.module';
             'dist/**/*.entity{.ts,.js}',
             'dist/**/**/*.entity{.ts,.js}',
           ],
-          ...config.get('db.mysql'),
+          ...config.get('mysql'),
         } as TypeOrmModuleOptions),
     }),
     WinstonModule.forRoot({
